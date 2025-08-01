@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>YUVRAJ SINGH DHEER</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background-color: #000;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
       font-family: 'Poppins', sans-serif;
-      color: #fff;
-      text-align: center;
+      background-color: #000;
+      color: white;
+    }
+
+    video#bgVideo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      filter: brightness(0.3);
     }
 
     .container {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 30px 20px;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-top: 120px;
     }
 
     .avatar {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
-      border: 3px solid #0ff;
+      border: 2px solid #fff;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
       margin-bottom: 20px;
-      box-shadow: 0 0 20px #0ff;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
       margin-bottom: 30px;
-      color: #0ff;
-      text-shadow: 0 0 10px #0ff;
     }
 
     .link {
-      display: block;
-      background-color: #0ff;
-      color: #000;
-      text-decoration: none;
-      padding: 12px;
-      border-radius: 8px;
-      margin: 12px 0;
-      box-shadow: 0 0 15px #0ff;
+      display: inline-block;
+      margin: 12px;
+      padding: 12px 30px;
       font-weight: bold;
-      transition: 0.3s;
+      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 0 12px #ff4b2b;
+      transition: 0.3s ease;
     }
 
     .link:hover {
-      background-color: #00cccc;
-      box-shadow: 0 0 25px #0ff;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      box-shadow: 0 0 20px #ff4b2b;
+      transform: scale(1.05);
     }
 
     .footer {
-      margin-top: 40px;
-      font-size: 13px;
-      color: #666;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
     }
   </style>
 </head>
 <body>
+
+  <video id="bgVideo" autoplay muted loop>
+    <source src="background.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
   <div class="container">
-    <img src="avatar.jpg" alt="Avatar" class="avatar">
+    <img src="avatar.jpg" alt="Avatar" class="avatar" />
     <h1>YUVRAJ SINGH DHEER</h1>
 
-    <a class="link" href="https://t.me/YOUR_TELEGRAM">Telegram</a>
-    <a class="link" href="https://youtube.com/@YOUR_CHANNEL">YouTube</a>
-    <a class="link" href="https://instagram.com/YOUR_HANDLE">Instagram</a>
+    <a href="https://t.me/YOUR_TELEGRAM" class="link">Telegram</a>
+    <a href="https://youtube.com/@YOUR_CHANNEL" class="link">YouTube</a>
+    <a href="https://instagram.com/YOUR_HANDLE" class="link">Instagram</a>
 
-    <div class="footer">&copy; 2025 YUVRAJ</div>
+    <div class="footer">&copy; 2025 Yuvraj</div>
   </div>
+
 </body>
 </html>
