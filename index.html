@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YUVRAJ SINGH DHEER</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
     body {
       margin: 0;
-      background: #000;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      padding: 0;
+      background-color: #000;
+      font-family: 'Poppins', sans-serif;
       color: #fff;
       text-align: center;
     }
 
-    img {
-      width: 150px;
-      height: 150px;
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      border: 3px solid #00f0ff;
-      box-shadow: 0 0 20px #00f0ff;
+      border: 3px solid #0ff;
       margin-bottom: 20px;
+      box-shadow: 0 0 20px #0ff;
     }
 
     h1 {
-      font-size: 30px;
-      color: #00f0ff;
-      text-shadow: 0 0 10px #00f0ff;
+      font-size: 28px;
       margin-bottom: 30px;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
     }
 
     .link {
       display: block;
-      margin: 10px;
-      padding: 12px 25px;
-      width: 220px;
-      background-color: #00f0ff;
+      background-color: #0ff;
       color: #000;
       text-decoration: none;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 12px 0;
+      box-shadow: 0 0 15px #0ff;
       font-weight: bold;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00f0ff;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
 
     .link:hover {
-      transform: scale(1.05);
-      background-color: #00c0cc;
-      box-shadow: 0 0 25px #00f0ff;
+      background-color: #00cccc;
+      box-shadow: 0 0 25px #0ff;
     }
 
-    footer {
+    .footer {
       margin-top: 40px;
-      font-size: 12px;
+      font-size: 13px;
       color: #666;
     }
   </style>
 </head>
 <body>
-  <img src="avatar.jpg" alt="Profile Picture" />
-  <h1>YUVRAJ SINGH DHEER</h1>
-  <a class="link" href="https://t.me/YOUR_USERNAME">Telegram</a>
-  <a class="link" href="https://youtube.com/@YOUR_CHANNEL">YouTube</a>
-  <a class="link" href="https://instagram.com/YOUR_HANDLE">Instagram</a>
-  <footer>
-    &copy; 2025 YUVRAJ SINGH DHEER
-  </footer>
+  <div class="container">
+    <img src="avatar.jpg" alt="Avatar" class="avatar">
+    <h1>YUVRAJ SINGH DHEER</h1>
+
+    <a class="link" href="https://t.me/YOUR_TELEGRAM">Telegram</a>
+    <a class="link" href="https://youtube.com/@YOUR_CHANNEL">YouTube</a>
+    <a class="link" href="https://instagram.com/YOUR_HANDLE">Instagram</a>
+
+    <div class="footer">&copy; 2025 YUVRAJ</div>
+  </div>
 </body>
 </html>
